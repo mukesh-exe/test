@@ -1,0 +1,21 @@
+
+
+
+name: Local Python Coding
+version: 0.0.1
+schema: v1
+
+models:
+  - name: Qwen2.5 Coder 3B Local
+    provider: ollama
+    model: qwen2.5-coder:3b
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - chat
+      - edit
+      - apply
+    capabilities:
+      - tool_use
+    defaultCompletionOptions:
+      contextLength: 128000
+      temperature: 0.1
